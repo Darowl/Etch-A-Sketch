@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <header>
+        <h1>Pixel Sketch</h1>
+    </header> -->
+    <div class="container">
+        <div class="container-left">
+            <div class="container-left-options">
+                <form class="options-color">
+                    <input type="color" id="changeColor">
+                </form>
+                <button  id="reset" type="button">Clear </button>
+                <form action="options-grid">
+                    <input type="range" name="numOfDivs" min="2" max="64"  id="range-divs" value="16">
+                    <output class="range-divs-output" for="numOfDivs"></output>
+                </form>
+            </div>
+        </div>
+        <div class="container-right">
+            <div id="gridContainer" class="container-grid">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>     
