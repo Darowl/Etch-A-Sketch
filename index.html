@@ -8,10 +8,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- <header>
-        <h1>Pixel Sketch</h1>
-    </header> -->
-    <div class="container">
+    <section class="options">
+        <form class="options-color" action="#">
+            <!-- <label for="color-pen">Color Pen:</label>
+            <input type="color" name="colorPen" id="color-pen"> 
+            <label for="color-background">Color background:</label>
+            <input type="color" name="color-background" id="color-background"> -->
+            <div class="color-pen-container">
+                <label for="color-pen">Pen:</label>
+                <input type="color" name="colorPen" id="color-pen" > 
+            </div>
+            <div class="color-background-container">
+                <label for="color-background">Background:</label>
+                <input type="color" name="color-background" id="color-background">
+            </div>
+            
+        </form>
+        <button type="button">Clear</button>
+    </section>
+    <section class="grid">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </section>
+    <!-- <div class="container">
         <div class="container-left">
             <div class="container-left-options">
                 <form class="options-color">
@@ -28,7 +61,7 @@
             <div id="gridContainer" class="container-grid">
             </div>
         </div>
-    </div>
+    </div> -->
     <script src="main.js"></script>
 </body>
 </html>     
