@@ -4,14 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-items: #F2F2F2;
+  --responsive: 6.25%;
+}
+
 
 body {
-  background-color: #f7f7f7;
+  background-color: #F2F2F2;
   color: rgb(248, 248, 248);
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 label {
@@ -22,6 +26,13 @@ button {
   padding: .5rem;
   width: 50%;
   border: none;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(95%);
 }
 
 .options, .options-color {
@@ -30,7 +41,7 @@ button {
 }
 
 .options {
-  background-color: rgb(64, 76, 253);
+  background-color: #764AF1;
   color: #f7f7f7;
   min-width: 15rem;
   max-width: 25%;
@@ -39,6 +50,8 @@ button {
   padding: 1rem 1.5rem;
   align-items: center;
   gap: 2rem;
+  border-radius: 10px;
+  /* border: 10px solid #9772FB; */
 }
 
 .options-color {
@@ -52,88 +65,34 @@ button {
   align-items: center;
 }
 
-/* input[type="color"] {
-
-} */
+input[type="color" i] {
+  width: 4rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
 
 .grid {
   display: flex;
   flex-wrap: wrap;
-  min-width: 50%;
+  min-width: 30rem;
   height: 80vh;
-  margin: 3rem 4rem 3rem 3rem;
-  background-color: rgb(255, 35, 35);
-  padding: 1rem;
-  border-radius: 10px;
+  margin: 3rem 10rem 3rem 3rem;
+  background-color: #F32424;
+  /* box-shadow: 12px 12px 2px 1px hsl(0, 90%, 50%); */
+  padding: 1.5rem;
+  border-radius: 18px;
 }
 
 .grid-item {
-  background-color: #f7f7f7;
+  background-color: var(--background-items);
   border: 1px solid black;
-  flex-basis: 25%;
+  /* flex-basis: 16.6%; */
+  flex-basis: var(--responsive);
 }
 
 .grid-item:hover {
   filter: brightness(95%);
 }
 
-
-
-
-/* .container {
-    display: inline-block;
-}
-
-.container-right {
-  float: right;
-}
-
-.container-left{
-  background-color: #555555;
-  margin: 2vw;
-  padding: 0 1em;
-  width: 20vw;
-  height: 90vh;
-  display: inline-block;
-  text-align: center;
-}
-
-.container-left-options {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2em;
-    margin-top: 2rem;
-}
-
-.options-color {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
-}
-
-button {
-  padding: 0.5rem;
-  margin: 0 3vw;
-}
-
-.container-grid {
-  margin-top: 25px;
-  margin-right: 40px;
-  display: inline-grid;
-  grid-template-columns: repeat(16, 2fr);
-  grid-template-rows: repeat(16, 2fr);
-  border: 5px solid black;
-  border-radius: 5px;
-  height: 575px;
-  width: 575px;
-}
-
-.square {
-  background-color: white;
-  border: 1px solid black;
-}
-
-.color {
-  background-color: rgb(0, 0, 0);
-  border: 1px solid black;
-} */
